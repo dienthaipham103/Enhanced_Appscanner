@@ -7,6 +7,8 @@ Appscanner is a method for mobile traffic classification based on flows. They de
 Moreover, our dataset is very large compared to the dataset in Appscanner project. So, we can build 16 different Machine Learning models. Each model is trained on a different dataset. Because a mobile traffic chunk is predicted by 16 models, so the voting scheme is also used here to get the final result.
 
 ## Dataset
-For training, there are 16 small datasets. For each small dataset, there are 101 mobile traffic chunks of 101 apps. The duration of one mobile traffic chunk is 50 minutes. With this dataset, we can train 16 different models. The training datset is saved in folder appscanner_models.
+For training, there are 16 small datasets. For each small dataset, there are 101 mobile traffic chunks of 101 apps. The duration of one mobile traffic chunk is 50 minutes. With this dataset, we can train 16 different models.
 
-For testing, there is a dataset including mobile traffic chunks (in 5 minutes) of 101 apps. Each app has about 100-300 traffic chunks to test. The testing dataset is saved in folder test. 
+For testing, there is a dataset including mobile traffic chunks (in 5 minutes) of 101 apps. Each app has about 100-300 traffic chunks to test.
+
+The dataset are saved in 2 folders appscanner_models and test.
