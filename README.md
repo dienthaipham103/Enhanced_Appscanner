@@ -24,3 +24,9 @@ First, we run:
 python predict.py --app_number x
 ```
 x is still the number of apps. We have to use the same x for training and testing. After running, the testing result will be saved in a folder named predictions. There will be 16 sub-folders in predictions. Each folder contains the prediction result of one model. 
+
+After having the prediction result of all 16 individual models, we run:
+```
+python voting.py
+```
+This step is to get the final prediction result by voting scheme. The final result of voting scheme will be save in predictions folder as model_17.
