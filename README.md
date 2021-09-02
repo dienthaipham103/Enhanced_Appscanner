@@ -24,6 +24,12 @@ app
 |   ...
 |
 ├── test
+|   ├── among_us
+|   ├── animal_restaurant
+|   ├── azar
+|   ├── baohay24h
+|   ...
+|
 ├── predictions
 |
 ├── __init__.py
