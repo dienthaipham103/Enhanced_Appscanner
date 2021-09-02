@@ -12,3 +12,11 @@ For training, there are 16 small datasets. For each small dataset, there are 101
 For testing, there is a dataset including mobile traffic chunks (in 5 minutes) of 101 apps. Each app has about 100-300 traffic chunks to test.
 
 The dataset is saved in 2 folders appscanner_models and test.
+
+## Train
+For training, run:
+```
+python train.py --app_number x
+```
+
+## Test
