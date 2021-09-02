@@ -11,9 +11,7 @@ Moreover, our dataset is very large compared to the dataset used in  Appscanner 
 ## Dataset
 For training, there are 16 small datasets. For each small dataset, there are 101 mobile traffic chunks of 101 apps. The duration of one mobile traffic chunk is 50 minutes. With this dataset, we can train 16 different models. For testing, there is a dataset including mobile traffic chunks (in 5 minutes) of 101 apps. Each app has about 100-300 traffic chunks to test.
 
-The dataset is saved in 2 folders *appscanner_models* and *test*.
-
-The file structure is as following:
+The dataset is saved in 2 folders *appscanner_models* and *test*. The file structure is shown as the following:
 ```
 app
 ├── appscanner_models
