@@ -26,11 +26,12 @@ app
 ├── test
 |   ├── among_us
 |   ├── animal_restaurant
-|   ├── azar
-|   ├── baohay24h
 |   ...
 |
 ├── predictions
+│   ├── model_1
+|   ├── model_2
+|   ...
 |
 ├── __init__.py
 ├── apps.json
