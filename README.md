@@ -14,6 +14,7 @@ For training, there are 16 small datasets. For each small dataset, there are 101
 The dataset is saved in 2 folders *appscanner_models* and *test*. The file structure is shown as the following:
 ```
 Appscanner_voting
+|
 ├── appscanner_models
 │   ├── model_1
 |   |    └── data
