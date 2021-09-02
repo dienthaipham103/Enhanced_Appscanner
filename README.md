@@ -11,21 +11,21 @@ Moreover, our dataset is very large compared to the dataset used in  Appscanner 
 ## Dataset
 For training, there are 16 small datasets. For each small dataset, there are 101 mobile traffic chunks of 101 apps. The duration of one mobile traffic chunk is 50 minutes. With this dataset, we can train 16 different models. For testing, there is a dataset including mobile traffic chunks (in 5 minutes) of 101 apps. Each app has about 100-300 traffic chunks to test.
 
-The dataset is saved in 2 folders appscanner_models and test.
+The dataset is saved in 2 folders *appscanner_models* and *test*.
 
 ## Train
 For training, run:
 ```
 python train.py --app_number x
 ```
-x could be 10, 20, 30, 40, 50, 60, 70, 80, 90, 101. It is the number of apps we want to train and test. The list of apps is saved in apps.json file. In the paper of MAppGraph, we run with all different number of apps to see the change of performance. After running, the 16 models will be trained and saved in the folder appscanner_models. They will be used for testing later.
+x could be 10, 20, 30, 40, 50, 60, 70, 80, 90, 101. It is the number of apps we want to train and test. The list of apps is saved in *apps.json* file. In the paper of MAppGraph, we run with all different number of apps to see the change of performance. After running, the 16 models will be trained and saved in the folder *appscanner_models*. They will be used for testing later.
 
 ## Test
 First, we run:
 ```
 python predict.py --app_number x
 ```
-x is still the number of apps. We have to use the same x for training and testing. After running, the testing result will be saved in a folder named predictions. There will be 16 sub-folders in predictions. Each folder contains the prediction result of one model. 
+x is still the number of apps. We have to use the same x for training and testing. After running, the testing result will be saved in a folder named *predictions*. There will be 16 sub-folders in *predictions*. Each folder contains the prediction result of one model. 
 
 After having the prediction result of all 16 individual models, we run:
 ```
