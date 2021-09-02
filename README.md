@@ -16,25 +16,29 @@ The dataset is saved in 2 folders *appscanner_models* and *test*.
 The file structure is as following:
 ```
 app
-├── config
-│   └── routes.js
-├── screens
-│   └── App
-│       ├── screens
-│       │   ├── Admin
-│       │   │   ├── screens
-│       │   │   │   ├── Reports
-│       │   │   │   │   └── index.js
-│       │   │   │   └── Users
-│       │   │   │       └── index.js
-│       │   │   └── index.js
-│       │   └── Course
-│       │       ├── screens
-│       │       │   └── Assignments
-│       │       │       └── index.js
-│       │       └── index.js
-│       └── index.js
-└── index.js
+├── appscanner_models
+│   ├── model_1
+|   |    └── data
+|   ├── model_2
+|   |    └── data
+|   ...
+|
+├── test
+├── predictions
+|
+├── __init__.py
+├── apps.json
+├── appscanner.py
+├── burst.py
+├── features.py
+├── flow.py
+├── predict.py
+├── preprocessor.py
+├── print_result.py
+├── reader.py
+├── train.py
+└── voting.py
+
 ```
 
 ## Train
