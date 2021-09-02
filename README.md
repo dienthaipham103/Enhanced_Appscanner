@@ -18,6 +18,6 @@ For training, run:
 ```
 python train.py --app_number x
 ```
-x could be 10, 20, 30, 40, 50, 60, 70, 80, 90, 101. It is the number of apps we want to train and test. The list of apps is saved in apps.json file. In the paper of MAppGraph, we run with all different number of apps to see the change of performance over the change of app number. 
+x could be 10, 20, 30, 40, 50, 60, 70, 80, 90, 101. It is the number of apps we want to train and test. The list of apps is saved in apps.json file. In the paper of MAppGraph, we run with all different number of apps to see the change of performance. After running, the 16 models will be trained and saved in the folder appscanner_models. They will be used for testing later.
 
 ## Test
