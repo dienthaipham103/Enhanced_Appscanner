@@ -13,6 +13,30 @@ For training, there are 16 small datasets. For each small dataset, there are 101
 
 The dataset is saved in 2 folders *appscanner_models* and *test*.
 
+The file structure is as following:
+```
+app
+├── config
+│   └── routes.js
+├── screens
+│   └── App
+│       ├── screens
+│       │   ├── Admin
+│       │   │   ├── screens
+│       │   │   │   ├── Reports
+│       │   │   │   │   └── index.js
+│       │   │   │   └── Users
+│       │   │   │       └── index.js
+│       │   │   └── index.js
+│       │   └── Course
+│       │       ├── screens
+│       │       │   └── Assignments
+│       │       │       └── index.js
+│       │       └── index.js
+│       └── index.js
+└── index.js
+```
+
 ## Train
 For training, run:
 ```
