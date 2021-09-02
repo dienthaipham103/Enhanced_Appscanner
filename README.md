@@ -30,3 +30,9 @@ After having the prediction result of all 16 individual models, we run:
 python voting.py
 ```
 This step is to get the final prediction result by voting scheme. The final result of voting scheme will be save in predictions folder as model_17.
+
+Finally, we run:
+```
+python print_result.py
+```
+It will show the precision, recall, f1-score, accuracy of 17 models (including the voting model).
