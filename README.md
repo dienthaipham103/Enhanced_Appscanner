@@ -11,7 +11,41 @@ Moreover, our dataset is very large compared to the dataset used in  Appscanner 
 ## Dataset
 For training, there are 16 small datasets. For each small dataset, there are 101 mobile traffic chunks of 101 apps. The duration of one mobile traffic chunk is 50 minutes. With this dataset, we can train 16 different models. For testing, there is a dataset including mobile traffic chunks (in 5 minutes) of 101 apps. Each app has about 100-300 traffic chunks to test.
 
-The dataset is saved in 2 folders *appscanner_models* and *test*.
+The dataset is saved in 2 folders *appscanner_models* and *test*. The file structure is shown as the following:
+```
+Appscanner_voting
+|
+├── appscanner_models
+│   ├── model_1
+|   |    └── data
+|   ├── model_2
+|   |    └── data
+|   ...
+|
+├── test
+|   ├── among_us
+|   ├── animal_restaurant
+|   ...
+|
+├── predictions
+│   ├── model_1
+|   ├── model_2
+|   ...
+|
+├── __init__.py
+├── apps.json
+├── appscanner.py
+├── burst.py
+├── features.py
+├── flow.py
+├── predict.py
+├── preprocessor.py
+├── print_result.py
+├── reader.py
+├── train.py
+└── voting.py
+
+```
 
 ## Train
 For training, run:
@@ -38,3 +72,8 @@ Finally, we run:
 python print_result.py
 ```
 It will show the precision, recall, f1-score, accuracy of 17 models (including the voting model).
+
+## References
+[1] `Thai-Dien Pham, Thien-Lac Ho, Tram Truong-Huu, Tien-Dung Cao, Hong-Linh Truong, “MAppGraph: Mobile-App Classification on Encrypted Network Traffic using Deep Graph Convolution Neural Networks”, Annual Computer Security Applications Conference - ACSAC, December 6-10, 2021.`
+
+[2] `Taylor, V. F., Spolaor, R., Conti, M., & Martinovic, I. (2016, March). Appscanner: Automatic fingerprinting of smartphone apps from encrypted network traffic. In 2016 IEEE European Symposium on Security and Privacy (EuroS&P) (pp. 439-454). IEEE.`
