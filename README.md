@@ -1,4 +1,4 @@
-# Appscanner_voting
+# Enhanced_Appscanner
 This code was implemented as part of the MAppGraph [1] paper. It is based on the implementation of Single Large Random Forest Classifier of AppScanner [2]. There are some new functions in the code compared to the original version.
 
 The original implementation of Single Large Random Forest Classifier of AppScanner is available on https://github.com/Thijsvanede/AppScanner.
