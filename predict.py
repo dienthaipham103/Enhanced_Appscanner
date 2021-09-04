@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 from appscanner import AppScanner
 
 
@@ -16,12 +17,17 @@ def predict(apps, model_index):
 
     model_path = 'appscanner_models/model_%d/model'%model_index
     prediction_folder = 'predictions/model_%d'%model_index
+    if not os.path.exists(prediction_folder):
+        os.mkdir(prediction_folder)
 
     appscanner.load_one_model(model_path)
 
     # predict testing samples of each class seperately
     for app in apps:
-        appscanner.predict_one_app(app, prediction_folder)
+        # check existance
+        json_path = os.path.join(prediction_folder, app + '.json')
+        if not os.path.exists(json_path):
+            appscanner.predict_one_app(app, prediction_folder)
 
 
 if __name__ == "__main__":
